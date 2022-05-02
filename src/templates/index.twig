@@ -1,0 +1,24 @@
+{% extends "_layouts/_generic_page_layout.twig" %}
+
+{% block headLinks %}
+	{{ parent() }}
+	<link rel="amphtml" href="/amp">
+{% endblock headLinks %}
+
+{% block content %}
+	<section  class="relative p-5 ">
+		<h1>content</h1>
+    	<h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </h1>
+	</section>
+{% endblock %}
+
+{% block subcontent %}
+	<section class="relative p-5 bg-purple-400">
+		<h2>subcontent</h2>
+	</section>
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+	{{ parent() }}
+{% endblock bodyJs %}
